@@ -201,7 +201,16 @@ class control_panel:
     
     #tabe ee bename create_device???
     
-    def create_sensor(self):
+    def create_sensor(self,group,sensor_type,sensor_name):
+       if group in self.groups:
+           location='home'
+           new_sensor=sensor(location,group,sensor_type,sensor_name)
+           self.sensor.append(new_sensor)
+           print('your sensor is added to new_sensor')
+           
+       else:
+           print('your group is not exist') #...
+       
         pass
     
     def create_multiple_sensor(self):
