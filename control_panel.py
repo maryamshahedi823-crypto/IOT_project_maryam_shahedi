@@ -120,7 +120,7 @@ class control_panel:
             
             for device in devices:
                 device.turn_on()
-            
+            print(f'all devices have been successfully turned on in {group_name}')
         else:
             print('your group  is not exist') 
             
@@ -135,7 +135,7 @@ class control_panel:
             for device in devices:
                 device.turn_off()
          
-              
+             print(f'all devices have been successfully turned off in {group_name}') 
         else:
             print('your group  is not exist')
         
@@ -149,7 +149,7 @@ class control_panel:
         if devices in self.devices:#اگر دستگاهی وجود داره در لیست دستگاهها
             for device in devices:
                 device.turn_on()
-            print('all devices is turn_on')
+            print('all devices have been successfully turned on')
         else:
             print('your devices  is not exist')
              
@@ -161,7 +161,7 @@ class control_panel:
          if devices in self.devices:#اگر دستگاهها وجود داره در لیست دستگاهها
              for device in devices:
                  device.turn_off()
-             print('all devices is turn_off')
+             print('all devices have been successfully turned off')
          else:
              print('your devices  is not exist')
                
