@@ -1,7 +1,21 @@
+'''
+
+ shahedi:hanoz kamel nist     
+
+
+
+APM:
+besiar awli , harj asoali dashtid dar haminja beporsid 
+moafagh bashid
+
+
+
+
+'''
+
 #===================================
 #-----****-----------
 #--------TASK  2, 3-----------------
- shahedi:hanoz kamel nist     
 
 class Device:
     
