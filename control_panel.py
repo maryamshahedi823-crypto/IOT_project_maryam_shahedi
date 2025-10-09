@@ -3,7 +3,6 @@
  shahedi:hanoz kamel nist     
 
 
-
 APM:
 besiar awli , harj asoali dashtid dar haminja beporsid 
 moafagh bashid
