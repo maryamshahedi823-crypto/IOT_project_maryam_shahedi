@@ -7,6 +7,7 @@ salam besiar awli , say konid tamam code bejoz in class Devcie ro hazf konid bar
 '''
 
 
+
 #=========== DEVICE ASLIE 1001 =======================
 
 import paho.mqtt.client as mqtt
