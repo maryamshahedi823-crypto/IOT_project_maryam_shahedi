@@ -207,7 +207,6 @@ class control_panel:
            new_sensor=sensor(location,group,sensor_type,sensor_name)
            self.sensor.append(new_sensor)
            print('your sensor is added to new_sensor')
-           
        else:
            print('your group is not exist') #...
        
@@ -220,8 +219,7 @@ class control_panel:
                self.create_sensor(group,sensor_type,se_name)
 
            print(f'{sensor_number} devices created!!')
-    
-       else:
+        else:
            print('your group is not exist')
   
     
