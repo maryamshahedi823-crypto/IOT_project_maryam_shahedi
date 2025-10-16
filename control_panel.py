@@ -7,7 +7,7 @@ APM:
 besiar awli , harj asoali dashtid dar haminja beporsid 
 moafagh bashid
 
-
+shahedi:salam vaght bekhyer khat 152 agh rahnamai konid mamnon mesham
 
 
 '''
@@ -77,8 +77,6 @@ class control_panel:
     
     def add_device_to_group(self,group_name,device):
         if group_name in self.groups:
-            
-        
             self.groups[group_name].append(device)
             # groups['living_room'] -->[]
             print(f'your devic is added to {group_name}')
@@ -89,7 +87,6 @@ class control_panel:
         
         
     def create_device(self,group_name,device_type,device_name):
-        
         if group_name in self.groups:
             location='home'
             new_device=Device(location,group_name,device_type,device_name)
@@ -105,7 +102,6 @@ class control_panel:
         
     def create_multiple_device(self,group_name,device_type,device_number):
         if group_name in self.groups:
-            
             for i in range(1,device_number+1):
                 dv_name=f'{device_type}_{i}'
                 self.create_device(group_name,device_type,dv_name)
@@ -119,18 +115,14 @@ class control_panel:
             
             
     def get_devices(self,group_name):
-        
         devices=self.groups[group_name]
         return devices
         
         
         
     def trun_on_in_group(self,group_name):
-        
-        if group_name in self.groups:
-            
+        if group_name in self.groups
             devices=self.get_devices(group_name)
-            
             for device in devices:
                 device.turn_on()
             print(f'all devices have been successfully turned on in {group_name}')
@@ -142,9 +134,7 @@ class control_panel:
     def turn_off_in_group(self,group_name):
         
         if group_name in self.groups:
-            
             devices=self.get_devices(group_name)
-            
             for device in devices:
                 device.turn_off()
          
@@ -159,7 +149,7 @@ class control_panel:
    
     
     def turn_on_all(self):
-        if devices in self.devices:#اگر دستگاهی وجود داره در لیست دستگاهها
+        if device in self.devices:#اگر دستگاه وجود داره در لیست دستگاهها
             for device in devices:
                 device.turn_on()
             print('all devices have been successfully turned on')
@@ -168,10 +158,10 @@ class control_panel:
              
                 
         
-        pass
+        
     
    def turn_off_all(self):
-         if devices in self.devices:#اگر دستگاهها وجود داره در لیست دستگاهها
+         if device in self.devices:#اگر دستگاه وجود داره در لیست دستگاهها
              for device in devices:
                  device.turn_off()
              print('all devices have been successfully turned off')
@@ -181,17 +171,14 @@ class control_panel:
              
     
     def get_status_in_group(self,group_name):
-        '''
-        be ezaye device haye tooye masalan felan group
-        living_room --> bebine roshanan ya khamoshan
-        porint kone
+       if group_name in self.groups
         
-        a.get_status_in_group('living_room')
-        
-        device {name} is on
-        ... ..  .. ois off
-        .. .. .. is on
-        '''
+              for device in devices:
+         
+                device.turn_on()  or   device.turn_off()
+          
+            
+ 
         
     def get_status_in_device_type(self,dvice_type):
         
@@ -224,7 +211,7 @@ class control_panel:
        else:
            print('your group is not exist') #...
        
-        pass
+        
     
     def create_multiple_sensor(self,group,sensor_type,sensor_number):
         if group in self.groups:
