@@ -226,8 +226,17 @@ class control_panel:
        
         pass
     
-    def create_multiple_sensor(self):
-        pass
+    def create_multiple_sensor(self,group,sensor_type,sensor_number):
+        if group in self.groups:
+              for i in range(1,sensor_number+1):
+               se_name=f'{sensor_type}_{i}'
+               self.create_sensor(group,sensor_type,se_name)
+
+           print(f'{sensor_number} devices created!!')
+    
+       else:
+           print('your group is not exist')
+  
     
     
     
