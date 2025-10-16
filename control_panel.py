@@ -8,6 +8,7 @@ besiar awli , harj asoali dashtid dar haminja beporsid
 moafagh bashid
 
 shahedi:salam vaght bekhyer khat 152 agh rahnamai konid mamnon mesham
+shahedi:man tamam talashmo kardam vali natonstam 2ta az def haro kamel konam
 
 
 '''
@@ -142,11 +143,11 @@ class control_panel:
         else:
             print('your group  is not exist')
         
-        
-             
-        pass
-    
-   
+
+
+
+ 
+  
     
     def turn_on_all(self):
         if device in self.devices:#اگر دستگاه وجود داره در لیست دستگاهها
